@@ -1,15 +1,25 @@
 interface IMarker {
     _id: string;
     title: string;
-    address: string;
-    city: string;
-    province: string;
-    postal_code: string;
+    address?: string;
+    city?: string;
+    province?: string;
+    postal_code?: string;
     latitude: number;
     longitude: number;
     persons: IPerson[];
     icon: string;
-    location_id: number;
+    location_id?: number;
+    color?: string;
+    period?: string;
+    info_open?: boolean;
+    visited?: boolean;
+    last_visited?: Date;
+    active?: boolean;
+    reserve?: boolean;
+    pickDate?: Date;
+    fromTime?: Date;
+    toTime?: Date;
 }
 
 interface PointProps {
