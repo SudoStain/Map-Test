@@ -110,7 +110,7 @@ interface IPeoples {
     postal_code: string;
     rank: string;
     person_id: number;
-    color_change_interval: number;
+    color_change_interval?: number;
 }
 
 interface ICallForm {

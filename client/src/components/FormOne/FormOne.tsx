@@ -57,7 +57,8 @@ const FormOne = ({ person }: IProps) => {
 
     return (
         <>
-            <LocalizationProvider dateAdapter={AdapterDateFns}>
+            {/* <LocalizationProvider dateAdapter={AdapterDateFns}> */}
+            <LocalizationProvider dateAdapter={null}>
                 <Container>
                     <div className="  p-20 rounded-md shadow-2xl">
                         <div className="text-center  pb-20">

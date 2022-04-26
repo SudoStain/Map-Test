@@ -2,11 +2,14 @@ import React, { useState, useRef, useEffect } from 'react'
 import {
   withScriptjs,
   withGoogleMap,
-  GoogleMap,
-  Marker,
+  // GoogleMap,
+  // Marker,
   DirectionsRenderer,
-  InfoWindow,
+  // InfoWindow,
 } from "react-google-maps"
+const { GoogleMap } = require("react-google-maps/lib/components/GoogleMap");
+const { InfoWindow } = require("react-google-maps/lib/components/InfoWindow");
+const { Marker } = require("react-google-maps/lib/components/Marker")
 const { MarkerClusterer } = require("react-google-maps/lib/components/addons/MarkerClusterer");
 const { compose, withProps, lifecycle } = require("recompose");
 const { DrawingManager } = require("react-google-maps/lib/components/drawing/DrawingManager");
@@ -254,8 +257,5 @@ const MyMapComponent: React.FC<Props> = compose (
     </MarkerClusterer>
   </GoogleMap>)}
 )
-
-
-
 
 export default MyMapComponent;
